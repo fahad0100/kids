@@ -1,46 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
-
-class SignUpScreen extends StatelessWidget {
-  const SignUpScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            children: [
-              CustomField(label: 'Full name', hint: 'Destination'),
-              Gap(10),
-              CustomField(
-                label: 'Email',
-                hint: 'Destination',
-                keyboardType: TextInputType.number,
-                // isPassword: true,
-                maxLines: 10,
-                enable: false,
-                borderColor: Colors.red,
-                errorMessage: "Asdfasdf",
-                prefixIcon: Icons.email,
-                isPassword: true,
-              ),
-              Gap(10),
-              CustomField(label: 'Password', hint: 'Destination', enable: true),
-              Gap(10),
-              CustomField(
-                label: 'Re-password',
-                hint: 'Destination',
-                isPassword: true,
-                enable: true,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
 
 class CustomField extends StatefulWidget {
   const CustomField({
