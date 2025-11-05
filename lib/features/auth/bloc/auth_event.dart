@@ -20,3 +20,9 @@ class RestPasswordEvent extends AuthEvent {
 
   RestPasswordEvent({required this.email});
 }
+
+class OTPVerifyEvent extends AuthEvent {
+  final String otp;
+
+  OTPVerifyEvent({required this.otp});
+}

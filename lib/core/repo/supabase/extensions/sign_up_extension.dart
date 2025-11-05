@@ -7,7 +7,12 @@ extension SignUpSupabase on SupabaseIntegration {
       await _supabase.auth.signUp(email: email, password: password);
       return Success(true);
     } catch (error) {
-      return Error(CustomException("There is error"));
+      print("Error:$error");
+      return Error(CustomException(error.toString()));
     }
   }
 }
+
+
+
+//re_Mmy54SRL_FMiTWGr1CJ9CeRRjeWfeBBWA

@@ -40,10 +40,12 @@ abstract class Routes {
       GoRoute(path: home, builder: (context, state) => HomeScreen()),
       GoRoute(
         path: otpScreen,
-        builder: (context, state) => BlocProvider.value(
-          value: state.extra as AuthBloc,
-          child: OTPScreen(),
-        ),
+        builder: (context, state) {
+          return BlocProvider.value(
+            value: state.extra as AuthBloc,
+            child: OTPScreen(),
+          );
+        },
       ),
       GoRoute(
         path: loadingScreen,

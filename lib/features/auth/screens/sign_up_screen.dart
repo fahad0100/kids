@@ -14,7 +14,7 @@ class SignUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final TextEditingController fullNameController = TextEditingController();
     final TextEditingController emailController = TextEditingController(
-      text: 'd@gmail.com',
+      text: 'yehemav229@nyfhk.com',
     );
     final TextEditingController phoneController = TextEditingController();
     final bloc = context.read<AuthBloc>();
@@ -30,6 +30,7 @@ class SignUpScreen extends StatelessWidget {
 
           LoadingWidget.show(context: context);
         }
+        LoadingWidget.close(context: context);
       },
       child: Scaffold(
         body: SafeArea(

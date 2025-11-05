@@ -21,3 +21,4 @@ Future<void> setupInit() async {
 
   GetIt.I.registerSingleton<LocalData>(LocalData(boxStorage: box));
 }
+
