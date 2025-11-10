@@ -29,6 +29,7 @@ dependencies:
   string_validator: ^1.2.0
   multiple_result: ^5.2.0
   dart_mappable: ^4.6.1
+  equatable: ^2.0.7
   
 
 

@@ -7,7 +7,7 @@ class LocalData {
     _boxStorage = boxStorage;
   }
 
-  saveLocal<T>({required String key, required T dataSave}) async {
+  Future<void> saveLocal<T>({required String key, required T dataSave}) async {
     await _boxStorage.write(key, dataSave);
     await _boxStorage.save();
   }

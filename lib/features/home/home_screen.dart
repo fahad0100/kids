@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:kinder_app/core/routes/base_route.dart';
+import 'package:kinder_app/features/authentication/presentation/pages/login_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,14 +9,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            context.go(Routes.login);
-          },
-          child: Text("HomeScreen"),
-        ),
-      ),
+      body: Center(child: LoginScreen(email: "seed123seed@gmail.com")),
     );
   }
 }
